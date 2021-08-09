@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script>document.documentElement.className += " js"
+    </script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -25,8 +27,8 @@
 
     <section class="grid-section animais ">
         <h1 class="tittle">Animais <br> Fantásticos</h1>
-        <ul class="animais-lista">
-            <li>
+        <ul class="animais-lista js-tabImg">
+            <li >
                 <img src="img/imagem1.jpg" alt="">
             </li>
             <li>
@@ -46,8 +48,8 @@
             </li>
         </ul>
 
-        <div class="grid-descricao">
-            <section>
+        <div class="grid-descricao js-tabContent">
+            <section class="ativo">
                 <h2>Raposa</h2>
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte
                     médio,
@@ -87,6 +89,18 @@
             </section>
             <section>
                 <h2>Lobo</h2>
+                <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte
+                    médio,
+                    caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+                <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos
+                    felídeos.</p>
+                <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas
+                    verdadeiras", do qual a raposa vermelha é a mais comum.</p>
+                <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas
+                    verdadeiras", do qual a raposa vermelha é a mais comum.</p>
+            </section>
+            <section>
+                <h2>macaco</h2>
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte
                     médio,
                     caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
@@ -151,6 +165,8 @@
     <footer class="copy">
         <p>Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -188,3 +188,22 @@ body {
     margin-bottom: 0px;
   }
 }
+.js .js-tabContent section {
+  display: none;
+  animation: show 1s forwards;
+}
+
+.js-tabContent section.ativo {
+  display: block !important;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
