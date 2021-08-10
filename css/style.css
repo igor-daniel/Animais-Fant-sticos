@@ -115,6 +115,7 @@ body {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   color: #e54;
+  font-size: 1.4em;
 }
 /* .fac-lista dt::before {
   content: "";
@@ -206,4 +207,19 @@ body {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+
+.js .js-acordinList dd {
+  display: none;
+}
+.js-acordinList dd.ativo {
+  display: block;
+  animation: show 1s forwards;
+}
+.js-acordinList dt::after {
+  content: "\21b4";
+}
+.js-acordinList dt.ativo::after {
+  content: "\2934";
+  margin-left: 10px;
 }
