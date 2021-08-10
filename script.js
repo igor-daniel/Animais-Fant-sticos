@@ -55,3 +55,25 @@ function initScrollSuave(){
     })
 }
 initScrollSuave()
+
+function initAnimaScroll(){
+
+const sections = document.querySelectorAll(".js-scroll")
+const windowMetade = window.innerHeight * 0.6;
+
+function animaScroll(){
+    sections.forEach((section) => {
+        const topo = section.getBoundingClientRect().top;
+        const isSectionVisible = (topo - windowMetade) < 0;
+        if(isSectionVisible) {
+            section.classList.add("ativo")
+        }
+     })
+}
+
+animaScroll()
+
+window.addEventListener("scroll", animaScroll)
+    
+}
+initAnimaScroll()

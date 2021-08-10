@@ -223,3 +223,14 @@ body {
   content: "\2934";
   margin-left: 10px;
 }
+
+.js .js-scroll {
+  opacity: 0;
+  transition: 0.3s;
+  transform: translate3d(-30, 0, 0);
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
